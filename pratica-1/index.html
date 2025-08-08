@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Usuário</title>
+</head>
+<body class="w-screen h-screen flex items-center justify-center">
+    <main class="border border-zinc-600 p-6 rounded-md">
+        <form action="" class="form-usuario flex flex-col gap-6">
+            <span class="slot-input flex flex-col gap-3">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" class="border border-zinc-300 rounded-sm p-1.5" placeholder="Informe seu nome...">
+            </span>
+            <span class="slot-input flex flex-col gap-3">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" class="border border-zinc-300 rounded-sm p-1.5" placeholder="(xx) xxxxx-xxxx">
+            </span>
+            <span class="slot-input flex flex-col gap-3">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" class="border border-zinc-300 rounded-sm p-1.5" placeholder="example@example.com">
+            </span>
+            <span class="slot-input flex flex-col gap-3">
+                <label for="tipo-pessoa">Tipo Pessoa</label>
+                <select name="tipo-pessoa" class="border border-zinc-300 rounded-sm p-1.5">
+                    <option value="1">Física</option>
+                    <option value="2">Jurídica</option>
+                    <!-- <option value="3">Física</option> -->
+                </select>
+            </span>
+            <span class="slot-endereco flex gap-3">
+                <span class="slot-input flex flex-col gap-3">
+                    <label for="endereco">Endereco</label>
+                    <input type="text" name="nome" class="border border-zinc-300 rounded-sm p-1.5" id="input-endereco" placeholder="Informe seu endereco...">
+                </span>
+                <span class="slot-input flex flex-col gap-3">
+                    <label for="uf">UF</label>
+                    <input type="text" name="uf" class="border border-zinc-300 rounded-sm p-1.5" id="input-uf" placeholder="UF">
+                </span>
+            </span>
+        </form>
+    </main>
+</body>
+</html>
