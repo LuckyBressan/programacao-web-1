@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <title>Cadastro de Usuários</title>
+</head>
+<body class="w-screen h-screen flex items-center justify-center bg-linear-to-bl bg-blue-400 to-red-400">
+    <main class="border border-blue-200 bg-zinc-50 p-6 rounded-2xl flex flex-col gap-6 shadow-2xl">
+        <h1 class="text-2xl font-bold">Cadastro de Usuários</h1>
+        <form action="" class="form-usuario flex flex-col gap-6">
+            <span class="slot-input flex flex-col gap-3">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" maxlength="50" class="border border-zinc-300 rounded-sm p-1.5" placeholder="Informe seu nome">
+            </span>
+            <span class="slot-input flex flex-col gap-3">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" maxlength="12" class="border border-zinc-300 rounded-sm p-1.5" placeholder="(xx) xxxxx-xxxx">
+            </span>
+            <span class="slot-input flex flex-col gap-3">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" maxlength="50" class="border border-zinc-300 rounded-sm p-1.5" placeholder="example@example.com">
+            </span>
+            <span class="slot-input flex flex-col gap-3">
+                <label for="tipo-pessoa">Tipo Pessoa</label>
+                <select id="tipo-pessoa" name="tipo-pessoa" class="border border-zinc-300 rounded-sm p-1.5">
+                    <option value="1">Física</option>
+                    <option value="2">Jurídica</option>
+                    <!-- <option value="3">Física</option> -->
+                </select>
+            </span>
+            <span class="slot-endereco flex gap-3">
+                <span class="slot-input flex flex-col gap-3 w-3/4">
+                    <label for="endereco">Endereco</label>
+                    <input type="text" id="endereco" name="endereco" class="border border-zinc-300 rounded-sm p-1.5" id="input-endereco" placeholder="Informe seu endereco...">
+                </span>
+                <span class="slot-input flex flex-col gap-3 w-1/4">
+                    <label for="uf">UF</label>
+                    <input type="text" id="uf" name="uf" maxlength="2" class="border border-zinc-300 rounded-sm p-1.5 uppercase" id="input-uf" placeholder="UF">
+                </span>
+            </span>
+            <button type="submit" class="cursor-pointer transition-shadow hover:shadow shadow-blue-600 rounded-sm bg-linear-to-tr bg-blue-400 to-blue-300 h-12 text-white font-bold">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
