@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./public/styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <title>Currículo</title>
+</head>
+<body class="w-screen h-screen flex flex-col font-[Inter]">
+    <header id="informacoes-pessoais" class="p-6 border-b-zinc-600 flex flex-row items-center justify-between">
+        <section id="informacoes-basicas">
+            <h1>Lucas Adriano dos Santos Bressan</h1>
+            <h2>19 anos</h2>
+        </section>
+        <section id="navegacao">
+            <nav class="flex gap-3">
+                <a href="#trabalhos">Trabalhos</a>
+                <a href="#educacao">Educação</a>
+            </nav>
+        </section>
+    </header>
+    <main id="informacoes-profissionais" class="p-6 flex flex-col gap-6 border-y">
+        <article id="trabalhos" class="flex flex-col gap-3">
+            <h1 class="titulo-article">Experiências</h1>
+            <section id="emprego-1" class="flex flex-col gap-3">
+                <h1><strong>Desenvolvedor Pleno</strong></h1>
+                <ul>
+                    <li>Desenvolvimento de novos componentes</li>
+                    <li>Correções de bugs</li>
+                    <li>Análise de desenvolvimento</li>
+                    <li>Revisão em pares</li>
+                </ul>
+            </section>
+        </article>
+        <article id="educacao">
+            <h1 class="titulo-article">Educação</h1>
+        </article>
+    </main>
+    <footer id="links" class="p-6 flex flex-col gap-3">
+        <h1>Minhas Redes</h1>
+        <span class="flex gap-3 items-center">
+            <a href="https://github.com/LuckyBressan/" target="_blank">
+                <img src="./public/images/github-logo.png" alt="" srcset="" width="40">
+            </a>
+            <a href="https://github.com/LuckyBressan/" target="_blank">
+                <img src="./public/images/linkedin-logo.png" alt="" srcset="" width="50">
+            </a>
+        </span>
+    </footer>
+</body>
+</html>
