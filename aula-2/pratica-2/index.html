@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="bg-zinc-500 p-6 flex justify-center items-center">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <title>Currículo</title>
 </head>
-<body class="w-screen h-screen flex flex-col font-[Inter]">
+<body class="w-3xl h-screen bg-zinc-50 flex flex-col font-[Inter] p-6">
     <header id="informacoes-pessoais" class="p-6 border-b-zinc-600 flex flex-row items-center justify-between">
         <section id="informacoes-basicas">
             <h1>Lucas Adriano dos Santos Bressan</h1>
@@ -21,16 +21,35 @@
             </nav>
         </section>
     </header>
-    <main id="informacoes-profissionais" class="p-6 flex flex-col gap-6 border-y">
+    <main id="informacoes-profissionais" class="p-6 flex flex-col gap-6 border-y grow shrink basis-full">
         <article id="trabalhos" class="flex flex-col gap-3">
             <h1 class="titulo-article">Experiências</h1>
             <section id="emprego-1" class="flex flex-col gap-3">
-                <h1><strong>Desenvolvedor Pleno</strong></h1>
+                <span class="cargo">
+                    <h1>
+                        <strong>Desenvolvedor Pleno</strong>
+                    </h1>
+                    <h2>IPM Sistemas</h2>
+                </span>
                 <ul>
                     <li>Desenvolvimento de novos componentes</li>
                     <li>Correções de bugs</li>
                     <li>Análise de desenvolvimento</li>
                     <li>Revisão em pares</li>
+                </ul>
+            </section>
+            <section id="emprego-2" class="flex flex-col gap-3">
+                <span class="cargo">
+                    <h1>
+                        <strong>Programador WEB</strong>
+                    </h1>
+                    <h2>Área Local</h2>
+                </span>
+                <ul>
+                    <li>Desenvolvimento de landing pages</li>
+                    <li>WIX</li>
+                    <li>Wordpress</li>
+                    <li>Figma</li>
                 </ul>
             </section>
         </article>

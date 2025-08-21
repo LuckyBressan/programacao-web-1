@@ -29,22 +29,35 @@
     --color-blue-950: oklch(0.282 0.091 267.935);
 }
 
-article {
+html {
 
-    h1 {
-        color: var(--color-blue-950);
-    }
 
-    .titulo-article {
-        width: max-content;
-        padding: .5rem;
-        border-radius: .25rem;
-        font-weight: 600;
-        background: var(--color-blue-100);
-    }
+    article {            
+        
+        h1 {
+            color: var(--color-blue-950);
+        }
 
-    section {
-        border-left: 2px solid var(--color-blue-200);
-        padding-left: 1rem;
+        .titulo-article {
+            width: max-content;
+            padding: .5rem;
+            border-radius: .25rem;
+            font-weight: 600;
+            background: var(--color-blue-100);
+        }
+
+        section {
+            border-left: 2px solid var(--color-blue-200);
+            padding-left: 1rem;
+
+            .cargo {
+                color: var(--color-blue-900);
+                h2 {
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    font-size: .85rem;
+                }
+            }
+        }
     }
 }
