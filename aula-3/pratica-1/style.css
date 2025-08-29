@@ -1,0 +1,16 @@
+body {
+
+    table {
+        thead {
+            text-align: center;
+    
+            tr:first-child {
+                background-color: gray;
+            }
+            th {
+                padding-inline: .75rem;
+            }
+        }
+        
+    }
+}
