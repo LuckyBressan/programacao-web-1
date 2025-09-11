@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    table {
+        thead {
+            text-align: center;
+
+            tr:first-child {
+                background-color: gray;
+            }
+            th {
+                padding-inline: .75rem;
+            }
+        }
+
+    }
+}
