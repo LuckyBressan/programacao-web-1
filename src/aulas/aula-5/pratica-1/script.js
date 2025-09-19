@@ -1,4 +1,4 @@
-document.addEventListener('readystatechange', () => {
+document.addEventListener('DOMContentLoaded', () => {
     /** @type {HTMLInputElement} */
     const num1 = document.querySelector('#num1')
     /** @type {HTMLInputElement} */

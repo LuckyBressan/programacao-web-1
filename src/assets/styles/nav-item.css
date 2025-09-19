@@ -1,0 +1,10 @@
+.nav-item {
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    > .nav-link {
+        color: var(--color-silver-tree-900);
+        text-decoration: none;
+    }
+}
