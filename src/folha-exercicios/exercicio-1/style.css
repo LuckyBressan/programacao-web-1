@@ -1,0 +1,173 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-*: initial;
+    --color-blue-50: oklch(0.97 0.014 254.604);
+    --color-blue-100: oklch(0.932 0.032 255.585);
+    --color-blue-200: oklch(0.882 0.059 254.128);
+    --color-blue-300: oklch(0.809 0.105 251.813);
+    --color-blue-400: oklch(0.707 0.165 254.624);
+    --color-blue-500: oklch(0.623 0.214 259.815);
+    --color-blue-600: oklch(0.546 0.245 262.881);
+    --color-blue-700: oklch(0.488 0.243 264.376);
+    --color-blue-800: oklch(0.424 0.199 265.638);
+    --color-blue-900: oklch(0.379 0.146 265.522);
+    --color-blue-950: oklch(0.282 0.091 267.935);
+
+    --color-red-50:  oklch(0.984 0.018 29.234);
+    --color-red-100: oklch(0.965 0.045 29.234);
+    --color-red-200: oklch(0.929 0.091 29.234);
+    --color-red-300: oklch(0.871 0.154 29.234);
+    --color-red-400: oklch(0.784 0.233 29.234);
+    --color-red-500: oklch(0.684 0.278 29.234);
+    --color-red-600: oklch(0.589 0.278 29.234);
+    --color-red-700: oklch(0.489 0.233 29.234);
+    --color-red-800: oklch(0.408 0.154 29.234);
+    --color-red-900: oklch(0.345 0.091 29.234);
+    --color-red-950: oklch(0.212 0.045 29.234);
+
+
+    --color-zinc-50:  oklch(0.98 0.004 257.5);
+    --color-zinc-100: oklch(0.965 0.008 257.5);
+    --color-zinc-200: oklch(0.929 0.016 257.5);
+    --color-zinc-300: oklch(0.871 0.024 257.5);
+    --color-zinc-400: oklch(0.784 0.032 257.5);
+    --color-zinc-500: oklch(0.684 0.04 257.5);
+    --color-zinc-600: oklch(0.589 0.048 257.5);
+    --color-zinc-700: oklch(0.489 0.056 257.5);
+    --color-zinc-800: oklch(0.408 0.064 257.5);
+    --color-zinc-900: oklch(0.345 0.072 257.5);
+    --color-zinc-950: oklch(0.212 0.08 257.5);
+
+}
+
+:root {
+    --color-blue-50: oklch(0.97 0.014 254.604);
+    --color-blue-100: oklch(0.932 0.032 255.585);
+    --color-blue-200: oklch(0.882 0.059 254.128);
+    --color-blue-300: oklch(0.809 0.105 251.813);
+    --color-blue-400: oklch(0.707 0.165 254.624);
+    --color-blue-500: oklch(0.623 0.214 259.815);
+    --color-blue-600: oklch(0.546 0.245 262.881);
+    --color-blue-700: oklch(0.488 0.243 264.376);
+    --color-blue-800: oklch(0.424 0.199 265.638);
+    --color-blue-900: oklch(0.379 0.146 265.522);
+    --color-blue-950: oklch(0.282 0.091 267.935);
+
+    --color-red-50:  oklch(0.984 0.018 29.234);
+    --color-red-100: oklch(0.965 0.045 29.234);
+    --color-red-200: oklch(0.929 0.091 29.234);
+    --color-red-300: oklch(0.871 0.154 29.234);
+    --color-red-400: oklch(0.784 0.233 29.234);
+    --color-red-500: oklch(0.684 0.278 29.234);
+    --color-red-600: oklch(0.589 0.278 29.234);
+    --color-red-700: oklch(0.489 0.233 29.234);
+    --color-red-800: oklch(0.408 0.154 29.234);
+    --color-red-900: oklch(0.345 0.091 29.234);
+    --color-red-950: oklch(0.212 0.045 29.234);
+
+    --color-zinc-50:  oklch(0.98 0.004 257.5);
+    --color-zinc-100: oklch(0.965 0.008 257.5);
+    --color-zinc-200: oklch(0.929 0.016 257.5);
+    --color-zinc-300: oklch(0.871 0.024 257.5);
+    --color-zinc-400: oklch(0.784 0.032 257.5);
+    --color-zinc-500: oklch(0.684 0.04 257.5);
+    --color-zinc-600: oklch(0.589 0.048 257.5);
+    --color-zinc-700: oklch(0.489 0.056 257.5);
+    --color-zinc-800: oklch(0.408 0.064 257.5);
+    --color-zinc-900: oklch(0.345 0.072 257.5);
+    --color-zinc-950: oklch(0.212 0.08 257.5);
+
+    body {
+        width: 100dvw;
+        height: 100dvh;
+        font-family: "Inter";
+        padding: calc(var(--spacing)*3);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: calc(var(--spacing)*6);
+    
+            height: max-content;
+            max-height: 100%;
+            max-width: 100%;
+    
+            border: 1px solid var(--color-blue-200);
+            background-color: var(--color-zinc-50);
+            padding: calc(var(--spacing)*6);
+    
+            .form-usuario {
+                display: flex;
+                flex-direction: column;
+                gap: calc(var(--spacing)*6);
+                overflow-x: hidden;
+        
+                .fieldset-infos {
+                    display: flex;
+                    flex-direction: column;
+                    gap: calc(var(--spacing)*3);
+                    padding: calc(var(--spacing)*3);
+                    border: 1px solid var(--color-blue-300);
+                    border-radius: .25rem;
+            
+                    legend {
+                        text-transform: uppercase;
+                        padding-inline: calc(var(--spacing)*3);
+                        font-size: .85rem;
+                    }
+                }
+        
+                .slot-mult-input {
+                    display: flex;
+                    gap: calc(var(--spacing)*3);
+                    flex-wrap: wrap;
+        
+                    .slot-input {
+                        flex: 1;
+                    }
+                }
+            
+                .slot-input {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    gap: calc(var(--spacing)*3);
+            
+                    label {
+                        width: max-content;
+            
+                        &::after {
+                            content: ":";
+                        }
+                    }
+                }
+        
+                .input-form {
+                    border: 1px solid var(--color-zinc-300);
+                    border-radius: .25rem;
+                    padding: calc(var(--spacing)*1.5);
+                }
+    
+                button {
+                    cursor: pointer;
+                    font-weight: bold;
+                    height: calc(var(--spacing)*12);
+                    color: white;
+                    
+                    &:not(:first-of-type) {
+
+                        &:active {
+                            background-color: var(--color-red-50);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
