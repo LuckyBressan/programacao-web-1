@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <title>Login</title>
+</head>
+<body class="bg-linear-to-bl bg-blue-400 to-red-400 text-blue-950">
+    <main class="rounded-2xl shadow-2xl w-[35rem]">
+        <h1 class="text-2xl font-bold">Login de Usuário</h1>
+        <form action="login.php" method="post" class="form-usuario">
+            <span class="slot-input">
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario" required class="input-form">
+            </span>
+            <span class="slot-input">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required class="input-form">
+            </span>
+            <span class="flex gap-3">
+                <button 
+                    type="submit" 
+                    class="
+                      shadow-blue-600 rounded-sm flex-1
+                      bg-linear-to-tr bg-blue-400 to-blue-300 p-3
+                    "
+                >
+                    Login
+                </button>
+            </span>
+        </form>
+    </main>
+</body>
+</html>
