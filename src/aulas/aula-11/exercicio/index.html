@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <title>Cadastro de Pessoas</title>
+</head>
+<body class="bg-linear-to-bl bg-blue-400 to-red-400 text-blue-950">
+    <main class="rounded-2xl shadow-2xl">
+        <h1 class="text-2xl font-bold">Pessoas</h1>
+        <form action="php/index.php?operacao=INSERIR" method="post" class="form-usuario">
+            <span class="slot-input">
+                <label for="operacao">Operação</label>
+                <select name="operacao" id="operacao" class="input-form">
+                    <option value="inserir">Inserir</option>
+                    <option value="listar">Listar</option>
+                    <option value="criar_tabela">Criar Tabela</option>
+                </select>
+            </span>
+            <fieldset class="fieldset-infos">
+                <legend>Dados</legend>
+                <span class="slot-mult-input" id="slot-nome-completo">
+                    <span class="slot-input">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" maxlength="100" placeholder="Informe seu nome" required  class="input-form" >
+                    </span>
+                    <span class="slot-input">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" maxlength="100" placeholder="Informe seu sobrenome" required  class="input-form" >
+                    </span>
+                </span>
+                <span class="slot-input">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" maxlength="100" placeholder="example@example.com" required class="input-form">
+                </span>
+                <span class="slot-input">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" maxlength="50" placeholder="********" required class="input-form">
+                </span>
+            </fieldset>
+            <fieldset class="fieldset-infos">
+                <legend>Localização</legend>
+                <span class="slot-input">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" maxlength="200" class="input-form" placeholder="Informe seu cidade...">
+                </span>
+                <span class="slot-input">
+                    <label for="uf">UF</label>
+                    <select name="uf" id="uf" class="input-form">
+                        <option value="">Selecione...</option>
+                        <option value="SC">SC</option>
+                        <option value="RS">RS</option>
+                        <option value="PR">PR</option>
+                    </select>
+                </span>
+            </fieldset>
+            <span class="flex gap-3">
+                <button 
+                    type="submit" 
+                    class="
+                        transition-shadow hover:shadow shadow-blue-600 
+                        rounded-sm bg-linear-to-tr bg-blue-400 to-blue-300 flex-3/4
+                    "
+                >
+                    Enviar
+                </button>
+                <button 
+                    type="reset" 
+                    class="
+                        transition-shadow hover:shadow shadow-blue-600 
+                        rounded-sm h-12 border flex-1/4
+                    "
+                >
+                    Limpar
+                </button>
+            </span>
+        </form>
+    </main>
+</body>
+</html>
