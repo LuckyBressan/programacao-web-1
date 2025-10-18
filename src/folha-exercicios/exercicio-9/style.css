@@ -102,8 +102,8 @@
             padding: calc(var(--spacing)*6);
 
             .form-usuario {
-                display: grid;
-                grid-template-columns: repeat(2, max-content);
+                display: flex;
+                flex-direction: column;
                 gap: calc(var(--spacing)*6);
                 overflow-x: hidden;
 
